@@ -3,11 +3,12 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 6,
-			"minor" : 0,
-			"revision" : 5
+			"minor" : 1,
+			"revision" : 2,
+			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 328.0, 127.0, 959.0, 510.0 ],
+		"rect" : [ 416.0, 102.0, 957.0, 638.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -28,13 +29,28 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-16",
+					"linecount" : 11,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 38.0, 10.0, 686.0, 154.0 ],
+					"text" : "All the math.la objects can behave differently to what a normal max object behaves: max objects usually only pass on their internal calculation if the left inlet is supplied, either with a value or a bang.\n\nmath.la object can be told to behave \n\nthe same way as max objects  = 0 or l (little L)\nthe other way around = r\nboth sides equal = rl or lr\nleft but only if a value was set on the right = l+\nright but only if a value was set on the left = r+\nboth sides equal but only if a value was set on either side = lr+ or rl+"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-15",
 					"maxclass" : "bpatcher",
 					"name" : "math.la.vector.maxpat",
 					"numinlets" : 4,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 716.5, 212.0, 199.0, 28.0 ]
+					"patching_rect" : [ 719.5, 377.0, 199.0, 28.0 ]
 				}
 
 			}
@@ -46,7 +62,7 @@
 					"numinlets" : 4,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 583.5, 250.0, 199.0, 28.0 ]
+					"patching_rect" : [ 586.5, 415.0, 199.0, 28.0 ]
 				}
 
 			}
@@ -58,7 +74,7 @@
 					"numinlets" : 4,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 442.5, 287.0, 199.0, 28.0 ]
+					"patching_rect" : [ 445.5, 452.0, 199.0, 28.0 ]
 				}
 
 			}
@@ -70,7 +86,7 @@
 					"numinlets" : 4,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 308.5, 332.0, 199.0, 28.0 ]
+					"patching_rect" : [ 311.5, 497.0, 199.0, 28.0 ]
 				}
 
 			}
@@ -82,7 +98,7 @@
 					"numinlets" : 4,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 174.5, 369.0, 199.0, 28.0 ]
+					"patching_rect" : [ 177.5, 534.0, 199.0, 28.0 ]
 				}
 
 			}
@@ -95,7 +111,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 716.5, 160.0, 125.0, 20.0 ],
+					"patching_rect" : [ 719.5, 325.0, 125.0, 20.0 ],
 					"text" : "math.la.vector.sub lr+"
 				}
 
@@ -109,7 +125,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 583.5, 160.0, 122.0, 20.0 ],
+					"patching_rect" : [ 586.5, 325.0, 122.0, 20.0 ],
 					"text" : "math.la.vector.sub r+"
 				}
 
@@ -123,7 +139,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 442.5, 160.0, 121.0, 20.0 ],
+					"patching_rect" : [ 445.5, 325.0, 121.0, 20.0 ],
 					"text" : "math.la.vector.sub l+"
 				}
 
@@ -137,7 +153,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 308.5, 160.0, 118.0, 20.0 ],
+					"patching_rect" : [ 311.5, 325.0, 118.0, 20.0 ],
 					"text" : "math.la.vector.sub lr"
 				}
 
@@ -151,7 +167,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 174.5, 160.0, 108.0, 20.0 ],
+					"patching_rect" : [ 177.5, 325.0, 108.0, 20.0 ],
 					"text" : "math.la.vector.sub"
 				}
 
@@ -164,7 +180,7 @@
 					"numinlets" : 4,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 35.0, 404.0, 199.0, 28.0 ]
+					"patching_rect" : [ 38.0, 569.0, 199.0, 28.0 ]
 				}
 
 			}
@@ -176,7 +192,7 @@
 					"numinlets" : 4,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 266.0, 54.0, 199.0, 28.0 ]
+					"patching_rect" : [ 269.0, 219.0, 199.0, 28.0 ]
 				}
 
 			}
@@ -189,7 +205,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 35.0, 160.0, 115.0, 20.0 ],
+					"patching_rect" : [ 38.0, 325.0, 115.0, 20.0 ],
 					"text" : "math.la.vector.sub r"
 				}
 
@@ -202,7 +218,7 @@
 					"numinlets" : 4,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 35.0, 54.0, 199.0, 28.0 ]
+					"patching_rect" : [ 38.0, 219.0, 199.0, 28.0 ]
 				}
 
 			}
@@ -372,22 +388,22 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "math.la.vector.maxpat",
-				"bootpath" : "/Users/maybites/Arbeiten/01_projekte/mayBites/120430_ElSantoGrial/max/math",
-				"patcherrelativepath" : "",
+				"bootpath" : "/Users/maybites/Arbeiten/02_code/library/max/MayMaxLibs/math/la",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "math.la.vector.sub.maxpat",
-				"bootpath" : "/Users/maybites/Arbeiten/01_projekte/mayBites/120430_ElSantoGrial/max/math",
-				"patcherrelativepath" : "",
+				"bootpath" : "/Users/maybites/Arbeiten/02_code/library/max/MayMaxLibs/math/la",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "calcseq.maxpat",
-				"bootpath" : "/Users/maybites/Arbeiten/01_projekte/mayBites/120430_ElSantoGrial/max/math/util",
-				"patcherrelativepath" : "../math/util",
+				"bootpath" : "/Users/maybites/Arbeiten/02_code/library/max/MayMaxLibs/math/la/util",
+				"patcherrelativepath" : "./util",
 				"type" : "JSON",
 				"implicit" : 1
 			}
